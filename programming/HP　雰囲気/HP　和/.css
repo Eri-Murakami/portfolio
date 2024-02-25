@@ -1,0 +1,172 @@
+body {
+    background-image:url("haikei.jpg");
+    background-position:center;
+    background-repeat:;
+    color: #333333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", sans-serif;
+  }
+
+header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:50px;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.header{
+    position: relative;
+}
+
+.icon{
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:100%;
+    left: 10%;
+    -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    font-size: 3rem;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    animation: mocchiri 3s infinite;
+}
+
+.top {
+    position: relative;
+}
+
+.top-left1 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #fff;
+    font-size: 30px;
+    animation: SlideIn 1.6s;
+}
+
+@keyframes SlideIn {
+0% {
+    opacity: 0;
+    transform: translateY(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-left2 {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #fff;
+    font-size: 30px;
+    animation: SlideIn 2s;
+}
+
+@keyframes SlideIn {
+0% {
+    opacity: 0;
+    transform: translateY(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul{
+    margin-top: 70%;
+    display: flex;
+    background-color:  rgba(255,255,255,.8);
+    height: 80px;
+}
+
+li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 30px;
+    
+}
+
+.list li{
+    margin: auto;
+    overflow: hidden;
+    float: inherit;
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.main{
+    display: flex;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.8);
+}
+
+.main1{
+    text-align: center;
+}
+
+.marker{
+    background: linear-gradient(transparent 70%,rgb(188,169,154,.7));
+    
+}
+
+h2{
+    font-size: 20px;
+}
+
+footer{
+    background-color: #fff;
+    clear: left;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #333333;
+	background-color: rgba(93,97,80,.5);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #333333;
+	text-decoration: none;
+}

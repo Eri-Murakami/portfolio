@@ -1,0 +1,51 @@
+body{
+    background-color: #EDE1D8;
+    color: #333333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", sans-serif;
+}
+
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+p{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  letter-spacing: .5em;
+    word-break : break-all;
+}
+
+.TextTyping {
+  text-align: center;
+}
+
+/*========= タイピング ===============*/
+
+.TextTyping span {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+footer{
+    clear: left;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    color: white;
+    background-color:#BCA99A;
+    text-align: center;
+    font-size: 20px;
+   
+}

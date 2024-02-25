@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+　position: relative;
+}
+
+a{
+  color: #333;
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+html,body{
+  height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-color:#f3f3f3;/*背景色*/
+    top: 0;
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
+}
+
+.fadeIn{
+animation-name:fadeInAnime;
+animation-duration:2s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon{
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:20%;
+    left: 5%;
+    -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    font-size: 3rem;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    animation: mocchiri 3s infinite;
+}
+
+h1{
+    font-size:  100px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow:
+            3px 3px 3px #BF932A, -3px -3px 3px #9E6200,
+           -3px 3px 3px #BF932A,  3px -3px 3px #ECDCAB,
+            3px 0px 3px #BF932A, -3px -0px 3px #ECDCAB,
+            0px 3px 3px #BF932A,  0px -3px 3px #9E6200;
+    margin: 0;
+}

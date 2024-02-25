@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+     <head>
+      <title>HP　ポップ</title>
+      <meta charset="UTF-8">
+      <title></title>
+    　<link rel="stylesheet" type="text/css" href=".css">
+    　</head>
+     <body>
+             <section class="container">
+             <div class="wave">
+             <a href="file:///C:/Users/Murakami%20Eri/Desktop/%E5%8B%89%E5%BC%B7/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%202/top/index%20.html">
+                       <img src="icon.png"width=10%>
+                   </a>
+                 <header>
+                 </header>
+             </div>
+                <div class="container">
+                    <p class="bound">
+                        <span>sample　text</span>
+                    </p>
+                 </div>
+         </section> 
+         <main>
+             <div class="haikei">
+             <h1>Lineup</h1>
+            <section id="main1">
+             <div class="main">
+                 <div class="main-1">
+                     <img src="1-1.jpg"width=80%>
+                     <h2><span class="marker">candy</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                      <a href="" class="btn">ボタン</a>
+                 </div>
+                 <div class="main-1">
+                     <img src="2-1.jpg"width=80%>
+                     <h2><span class="marker">cooky</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                     <a href="" class="btn">ボタン</a>
+                 </div>
+                 </div>
+                <div class="main2">
+                <div class="main-1">
+                     <img src="7-1.jpg"width=80%>
+                     <h2><span class="marker">Chocolate</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                    <a href="" class="btn">ボタン</a>
+                 </div>
+                <div class="main-1">
+                     <img src="5-1.jpg"width=80%>
+                     <h2><span class="marker">macaron</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                    <a href="" class="btn">ボタン</a>
+                 </div>
+                    <div class="main-1">
+                     <img src="4-1.jpg"width=80%>
+                     <h2><span class="marker">other</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                        <a href="" class="btn">ボタン</a>
+                 </div>
+                </div>
+            </section>
+             <div class="otoiawase">
+                 <img src="6.jpg">
+                 <h2>お問い合わせはこちら</h2>
+                 <p><a href="">問い合わせフォームへ</a><br>
+                 Tel : 000-00-0000</p>
+             </div>
+             </div>
+             
+         </main>
+          <footer>Murakami Eri</footer>
+         <div class="pagetop">↑</div>
+     </body>
+    </html>

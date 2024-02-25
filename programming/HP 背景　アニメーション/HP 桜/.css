@@ -1,0 +1,76 @@
+body{
+    color: #333333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", sans-serif;
+     
+}
+
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+a{
+  color: #333;
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+html,body{
+  height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-image: url('3-1.jpg');/*背景色*/
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+ top: 0;
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
+}
+
+.fadeIn{
+animation-name:fadeInAnime;
+animation-duration:2s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1{
+    font-size:  100px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow:
+            3px 3px 3px #E0A295, -3px -3px 3px #E0A295,
+           -3px 3px 3px #E0A295,  3px -3px 3px #E0A295,
+            3px 0px 3px #E0A295, -3px -0px 3px #E0A295,
+            0px 3px 3px #E0A295,  0px -3px 3px #E0A295;
+    margin: 0;
+}

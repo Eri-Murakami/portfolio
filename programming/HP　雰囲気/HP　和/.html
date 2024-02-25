@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+    <html lang="ja">
+     <head>
+      <title>HP　和</title>
+      <meta charset="UTF-8">
+      <title></title>
+    　<link rel="stylesheet" type="text/css" href=".css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+    　</head>
+     <body>
+        
+         <header id="header">
+             <div class="top">
+         <img src="1.jpg"width=100%>
+             <p class="top-left1">テキストテキスト</p>
+             <p class="top-left2">テキストテキスト</p>
+             </div>
+             <div class="icon"> 
+             <a href="file:///C:/Users/Murakami%20Eri/Desktop/%E5%8B%89%E5%BC%B7/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%202/design/top/index%20.html">
+               <img src="icon.png"width=10%>
+              </a>
+                 </div>
+        </header>       
+         
+         <ul class="list">
+             <li><a href="#main1">季節のおおすすめ</a></li>
+             <li><a href="#main2">お茶</a></li>
+             <li><a href="#main3">大福</a></li>
+             <li><a href="#main4">その他</a></li>
+         </ul>
+         <main>
+             <section id="main1">
+             <h1>季節のおすすめ</h1>
+             <div class="main">
+                 <div class="main1">
+                     <img src="2-1.jpg"width=70%>
+                     <h2><span class="marker">ゆず餅</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 <div class="main1">
+                     <img src="5.jpg"width=70%>
+                     <h2><span class="marker">季節の花</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 </div>
+            </section>
+             
+             <section id="main2">
+             <h1>お茶</h1>
+             <div class="main">
+                 <div class="main1">
+                     <img src="4.jpg"width=90%>
+                     <h2><span class="marker">緑茶</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 <div class="main1">
+                     <img src="3-1.jpg"width=90%>
+                     <h2><span class="marker">ほうじ茶</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 <div class="main1">
+                     <img src="8-1.jpg"width=90%>
+                     <h2><span class="marker">その他</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+             </div>
+             </section>
+             
+              <section id="main3">
+             <h1>大福</h1>
+             <div class="main">
+                 <div class="main1">
+                     <img src="9-1.jpg"width=90%>
+                     <h2><span class="marker">苺大福</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 <div class="main1">
+                     <img src="10-1.jpg"width=90%>
+                     <h2><span class="marker">塩大福</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                  <div class="main1">
+                     <img src="12-1.jpg"width=90%>
+                     <h2><span class="marker">桜餅</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 </div>
+            </section>
+             
+              <section id="main4">
+             <h1>その他</h1>
+             <div class="main">
+                 <div class="main1">
+                     <img src="11-1.jpg"width=90%>
+                     <h2><span class="marker">水菓子</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 <div class="main1">
+                     <img src="13-1.jpg"width=90%>
+                     <h2><span class="marker">ぜんざい</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                  <div class="main1">
+                     <img src="7-1.jpg"width=90%>
+                     <h2><span class="marker">砂糖菓子</span></h2>
+                     <p>テキストテキストテキスト<br>
+                     テキストテキストテキスト</p>
+                 </div>
+                 </div>
+            </section>
+         </main>
+         <footer>Murakami　Eri</footer>
+         <div class="pagetop">↑</div>
+    </body>
+    </html>
